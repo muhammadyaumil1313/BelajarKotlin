@@ -1,7 +1,11 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import data.Car
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    //initializer block adalah block kode yang akan di eksekusi ketika constructor dipanggil
+    val avanza = Car("Toyota")
+    avanza.year = 2015
+    val almaz = Car("Wuling")
+    almaz.year = 2020
+    println(avanza.year)
+    println(avanza.brand)
 }
